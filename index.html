@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <title>Blankest Blank in the Blank</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body style="max-width: 80em; padding: 1em;">
-    <h1><em>Blank</em>est <em>blank</em> in the <em>blank</em></h1>
+  <body>
     <div>
       <p id="phrase">Not the sharpest knife in the drawer</p>
       <button id="randomize">Randomize</button>
     </div>
     <br>
     <details>
-      <summary>Phrase Bank</summary>
-      <textarea id="phrase-bank" style="width: 100%; height: 30em;"></textarea>
+      <summary>Phrase bank (add your own)</summary>
+      <textarea id="phrase-bank"></textarea>
       <pre id="parse-error"></pre>
+      <p>Contribute new phrases on <a href="https://github.com/justinyaodu/blankest-blank-in-the-blank/">GitHub</a>!</p>
     </details>
     <script src="phrase.js"></script>
   </body>

@@ -6,23 +6,39 @@ const phraseBank = document.getElementById("phrase-bank");
 const parseError = document.getElementById("parse-error");
 
 phraseBank.value = `
+biggest, coconut, on the tree
 biggest, cookie, in the jar
 biggest, cow, in the pasture
+biggest, fish, in the sea
+biggest, egg, in the basket
 brightest, bulb, on the Christmas tree
-brightest, bulb, in the chandelier
+brightest, candle, in the chandelier
 brightest, star, in the sky
+cleanest, plate, on the rack
 fastest, gun, in the west
 fattest, pig, in the pen
+freshest, leaf, in the salad
+funniest, clown, in the circus
 loudest, chicken, in the coop
+loudest, horn, in the orchestra
+most beautiful, painting, in the gallery
 most colorful, crayon, in the box
-ripest, fruit, in the basket
+most dangerous, pirate, on the high seas
+neatest, shelf, in the library
+ripest, apple, in the barrel
+ripest, banana, in the bunch
+roundest, marble, in the bag
 sharpest, knife, in the drawer
 sharpest, pencil, in the cup
 sharpest, needle, in the pincushion
+sharpest, tack, on the wall
 sharpest, tool, in the shed
 shiniest, penny, in the pond
 strongest, horse, in the stable
+sweetest, berry, on the bush
+sweetest, grape, on the vine
 tallest, tree, in the forest
+tastiest, dumpling, in the pot
 `.trim();
 
 function parsePhrases(phrases) {
@@ -66,7 +82,7 @@ function getRandomPhrase() {
     return "No phrases in phrase bank!"
   }
 
-  let phrase = "Not the";
+  let phrase = "You're not the";
   for (let i = 0; i < 3; i++) {
     const j = Math.floor(Math.random() * phrases.length);
     phrase += " " + phrases[j][i];
